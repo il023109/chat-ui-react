@@ -10,7 +10,7 @@ export { MuiFileInput } from './mui/MuiFileInput';
 export { MuiAudioInput } from './mui/MuiAudioInput';
 
 
-function App(): React.ReactElement {
+export default function App(): React.ReactElement {
   const [chatCtl] = React.useState(new ChatController());
 
   React.useMemo(async () => {
@@ -25,4 +25,4 @@ function App(): React.ReactElement {
 
   // Only one component used for display
   return <MuiChat chatController={chatCtl} />;
-};
+}
