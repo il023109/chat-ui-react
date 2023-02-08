@@ -25,4 +25,4 @@ function App(): React.ReactElement {
 
   // Only one component used for display
   return <MuiChat chatController={chatCtl} />;
-}
+};
